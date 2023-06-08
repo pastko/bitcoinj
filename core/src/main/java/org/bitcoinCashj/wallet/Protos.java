@@ -6431,7 +6431,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.PeerAddress broadcast_by = 6;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.PeerAddress>
+    java.util.List<org.bitcoinCashj.wallet.Protos.PeerAddress> 
         getBroadcastByList();
     /**
      * <code>repeated .wallet.PeerAddress broadcast_by = 6;</code>
@@ -7007,7 +7007,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.PeerAddress broadcast_by = 6;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.PeerAddressOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.PeerAddressOrBuilder> 
         getBroadcastByOrBuilderList() {
       return broadcastBy_;
     }
@@ -7874,7 +7874,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.TransactionInput transaction_input = 6;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.TransactionInput>
+    java.util.List<org.bitcoinCashj.wallet.Protos.TransactionInput> 
         getTransactionInputList();
     /**
      * <code>repeated .wallet.TransactionInput transaction_input = 6;</code>
@@ -7888,7 +7888,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.TransactionOutput transaction_output = 7;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.TransactionOutput>
+    java.util.List<org.bitcoinCashj.wallet.Protos.TransactionOutput> 
         getTransactionOutputList();
     /**
      * <code>repeated .wallet.TransactionOutput transaction_output = 7;</code>
@@ -8661,7 +8661,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.TransactionInput transaction_input = 6;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TransactionInputOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TransactionInputOrBuilder> 
         getTransactionInputOrBuilderList() {
       return transactionInput_;
     }
@@ -8755,7 +8755,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.TransactionOutput transaction_output = 7;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TransactionOutputOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TransactionOutputOrBuilder> 
         getTransactionOutputOrBuilderList() {
       return transactionOutput_;
     }
@@ -12160,7 +12160,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Key key = 3;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.Key>
+    java.util.List<org.bitcoinCashj.wallet.Protos.Key> 
         getKeyList();
     /**
      * <code>repeated .wallet.Key key = 3;</code>
@@ -12174,7 +12174,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Transaction transaction = 4;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.Transaction>
+    java.util.List<org.bitcoinCashj.wallet.Protos.Transaction> 
         getTransactionList();
     /**
      * <code>repeated .wallet.Transaction transaction = 4;</code>
@@ -12188,7 +12188,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Script watched_script = 15;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.Script>
+    java.util.List<org.bitcoinCashj.wallet.Protos.Script> 
         getWatchedScriptList();
     /**
      * <code>repeated .wallet.Script watched_script = 15;</code>
@@ -12247,7 +12247,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Extension extension = 10;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.Extension>
+    java.util.List<org.bitcoinCashj.wallet.Protos.Extension> 
         getExtensionList();
     /**
      * <code>repeated .wallet.Extension extension = 10;</code>
@@ -12313,7 +12313,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Tag tags = 16;</code>
      */
-    java.util.List<org.bitcoinCashj.wallet.Protos.Tag>
+    java.util.List<org.bitcoinCashj.wallet.Protos.Tag> 
         getTagsList();
     /**
      * <code>repeated .wallet.Tag tags = 16;</code>
@@ -12682,7 +12682,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Key key = 3;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.KeyOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.KeyOrBuilder> 
         getKeyOrBuilderList() {
       return key_;
     }
@@ -12776,7 +12776,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Transaction transaction = 4;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TransactionOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TransactionOrBuilder> 
         getTransactionOrBuilderList() {
       return transaction_;
     }
@@ -12870,7 +12870,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Script watched_script = 15;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.ScriptOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.ScriptOrBuilder> 
         getWatchedScriptOrBuilderList() {
       return watchedScript_;
     }
@@ -13103,7 +13103,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Extension extension = 10;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.ExtensionOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.ExtensionOrBuilder> 
         getExtensionOrBuilderList() {
       return extension_;
     }
@@ -13333,7 +13333,7 @@ public final class Protos {
     /**
      * <code>repeated .wallet.Tag tags = 16;</code>
      */
-    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TagOrBuilder>
+    public java.util.List<? extends org.bitcoinCashj.wallet.Protos.TagOrBuilder> 
         getTagsOrBuilderList() {
       return tags_;
     }

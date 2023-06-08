@@ -37,7 +37,7 @@ public class VersionMessageTest {
         VersionMessage ver = new VersionMessage(UNITTEST, HEX.decode(hex));
         assertFalse(ver.relayTxesBeforeFilter);
         assertEquals(1024, ver.bestHeight);
-        assertEquals("/bitcoinCashj:0.13/", ver.subVer);
+        assertEquals("/bitcoinj:0.13/", ver.subVer);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class VersionMessageTest {
         VersionMessage ver = new VersionMessage(UNITTEST, HEX.decode(hex));
         assertTrue(ver.relayTxesBeforeFilter);
         assertEquals(1024, ver.bestHeight);
-        assertEquals("/bitcoinCashj:0.13/", ver.subVer);
+        assertEquals("/bitcoinj:0.13/", ver.subVer);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class VersionMessageTest {
         VersionMessage ver = new VersionMessage(UNITTEST, HEX.decode(hex));
         assertTrue(ver.relayTxesBeforeFilter);
         assertEquals(0, ver.bestHeight);
-        assertEquals("/bitcoinCashj:0.13/", ver.subVer);
+        assertEquals("/bitcoinj:0.13/", ver.subVer);
     }
 
     @Test
@@ -71,7 +71,7 @@ public class VersionMessageTest {
     public void roundTrip_ipv4() throws Exception {
         VersionMessage ver = new VersionMessage(UNITTEST, 1234);
         ver.time = 23456;
-        ver.subVer = "/bitcoinCashj/";
+        ver.subVer = "/bitcoinj/";
         ver.clientVersion = NetworkParameters.ProtocolVersion.CURRENT.getBitcoinProtocolVersion();
         ver.localServices = 1;
         ver.fromAddr = new PeerAddress(UNITTEST, InetAddress.getByName("1.2.3.4"), 3888);
@@ -82,7 +82,7 @@ public class VersionMessageTest {
         VersionMessage ver2 = new VersionMessage(UNITTEST, serialized);
         assertEquals(1234, ver2.bestHeight);
         assertEquals(23456, ver2.time);
-        assertEquals("/bitcoinCashj/", ver2.subVer);
+        assertEquals("/bitcoinj/", ver2.subVer);
         assertEquals(NetworkParameters.ProtocolVersion.CURRENT.getBitcoinProtocolVersion(), ver2.clientVersion);
         assertEquals(1, ver2.localServices);
         assertEquals("1.2.3.4", ver2.fromAddr.getAddr().getHostAddress());
@@ -95,7 +95,7 @@ public class VersionMessageTest {
     public void roundTrip_ipv6() throws Exception {
         VersionMessage ver = new VersionMessage(UNITTEST, 1234);
         ver.time = 23456;
-        ver.subVer = "/bitcoinCashj/";
+        ver.subVer = "/bitcoinj/";
         ver.clientVersion = NetworkParameters.ProtocolVersion.CURRENT.getBitcoinProtocolVersion();
         ver.localServices = 1;
         ver.fromAddr = new PeerAddress(UNITTEST, InetAddress.getByName("2001:db8:85a3:0:0:8a2e:370:7334"), 3888);
@@ -106,7 +106,7 @@ public class VersionMessageTest {
         VersionMessage ver2 = new VersionMessage(UNITTEST, serialized);
         assertEquals(1234, ver2.bestHeight);
         assertEquals(23456, ver2.time);
-        assertEquals("/bitcoinCashj/", ver2.subVer);
+        assertEquals("/bitcoinj/", ver2.subVer);
         assertEquals(NetworkParameters.ProtocolVersion.CURRENT.getBitcoinProtocolVersion(), ver2.clientVersion);
         assertEquals(1, ver2.localServices);
         assertEquals("2001:db8:85a3:0:0:8a2e:370:7334", ver2.fromAddr.getAddr().getHostAddress());

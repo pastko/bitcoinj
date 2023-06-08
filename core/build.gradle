@@ -10,7 +10,7 @@ version = '0.16.2'
 dependencies {
     api 'org.bouncycastle:bcprov-jdk15to18:1.69'
     api 'com.google.guava:guava:31.0.1-android'
-    api 'com.google.protobuf:protobuf-javalite:3.18.0'
+    api 'com.google.protobuf:protobuf-javalite:3.19.6'
     api 'com.squareup.okhttp3:okhttp:3.14.9'
     implementation 'org.slf4j:slf4j-api:1.7.32'
     implementation 'net.jcip:jcip-annotations:1.0'
@@ -33,7 +33,7 @@ javadoc.options.encoding = 'UTF-8'
 
 protobuf {
     protoc {
-        artifact = 'com.google.protobuf:protoc:3.18.0'
+        artifact = 'com.google.protobuf:protoc:3.19.6'
     }
     generateProtoTasks {
         all().each { task ->
@@ -67,12 +67,12 @@ jar {
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
+    archiveClassifier = 'javadoc'
     from javadoc.destinationDir
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
+    archiveClassifier = 'sources'
     from sourceSets.main.allSource
 }
 

@@ -48,16 +48,16 @@ protobuf {
 }
 
 test {
-    exclude 'org/bitcoinj/core/PeerTest*'
-    exclude 'org/bitcoinj/core/TransactionBroadcastTest*'
-    exclude 'org/bitcoinj/net/discovery/DnsDiscoveryTest*'
+    exclude 'org/bitcoinCashj/core/PeerTest*'
+    exclude 'org/bitcoinCashj/core/TransactionBroadcastTest*'
+    exclude 'org/bitcoinCashj/net/discovery/DnsDiscoveryTest*'
     testLogging {
         events "failed"
         exceptionFormat "full"
     }
 }
 
-ext.moduleName = 'org.bitcoinj.core'
+ext.moduleName = 'org.bitcoinCashj.core'
 
 jar {
     inputs.property("moduleName", moduleName)
@@ -84,7 +84,7 @@ artifacts {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifactId = 'bitcoinj-core'
+            artifactId = 'bitcoinCashj-core'
             from components.java
             artifact sourcesJar
             artifact javadocJar

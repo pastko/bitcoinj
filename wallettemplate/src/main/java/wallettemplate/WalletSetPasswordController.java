@@ -16,16 +16,15 @@
 
 package wallettemplate;
 
-import javafx.application.*;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.wallet.*;
-import org.bitcoinj.walletfx.application.WalletApplication;
-import org.bitcoinj.walletfx.overlay.OverlayController;
-import org.bitcoinj.walletfx.overlay.OverlayableStackPaneController;
+import org.bitcoinCashj.crypto.*;
+import org.bitcoinCashj.wallet.*;
+import org.bitcoinCashj.walletfx.application.WalletApplication;
+import org.bitcoinCashj.walletfx.overlay.OverlayController;
+import org.bitcoinCashj.walletfx.overlay.OverlayableStackPaneController;
 import org.slf4j.*;
 import org.bouncycastle.crypto.params.*;
 
@@ -34,8 +33,8 @@ import com.google.protobuf.ByteString;
 import java.time.Duration;
 import java.util.concurrent.*;
 
-import org.bitcoinj.walletfx.utils.KeyDerivationTasks;
-import static org.bitcoinj.walletfx.utils.GuiUtils.*;
+import org.bitcoinCashj.walletfx.utils.KeyDerivationTasks;
+import static org.bitcoinCashj.walletfx.utils.GuiUtils.*;
 
 public class WalletSetPasswordController implements OverlayController<WalletSetPasswordController> {
     private static final Logger log = LoggerFactory.getLogger(WalletSetPasswordController.class);

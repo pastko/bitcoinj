@@ -18,10 +18,10 @@ package wallettemplate;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.walletfx.application.AppDelegate;
+import org.bitcoinCashj.core.NetworkParameters;
+import org.bitcoinCashj.params.TestNet3Params;
+import org.bitcoinCashj.script.Script;
+import org.bitcoinCashj.walletfx.application.AppDelegate;
 
 /**
  * Proxy JavaFX {@link Application} that delegates all functionality
